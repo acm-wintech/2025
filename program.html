@@ -12,62 +12,8 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body data-spy="scroll" data-target="#site-nav">
-    <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
-        <div class="container">
-            <div class="navbar-header">
-
-                <!-- logo -->
-                <div class="site-branding">
-                    <a class="logo" href="index.html">ACM WiNTECH 2021</a>
-                </div>
-
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-            </div><!-- /.navbar-header -->
-
-            <div class="collapse navbar-collapse" id="navbar-items">
-                <ul class="nav navbar-nav navbar-right">
-                    <!-- navigation menu -->
-                    <li><a href="index.html#about">Home</a></li>
-                    <li><a href="cfp.html#cfp">Call for Papers</a></li>
-                    <li><a href="submission.html#submission">Info for Authors</a></li>
-                    <li><a href="demo.html#demo">Posters/Demos</a></li>
-                    <li><a href="committee.html#organization">Committees</a></li>
-                </ul>
-            </div>
-        </div><!-- /.container -->
-    </nav>
-
-    <header id="site-header" class="site-header valign-center" height="100px">
-        <div class="intro">
-
-            <h1>ACM WiNTECH 2021</h1>
-
-            <h2>The 15<sup>th</sup>ACM Workshop on Wireless Network<br>Testbeds, Experimental evaluation &amp; CHaracterization</h2>
-
-            <br class="mobile-break">
-            <h2>New Orleans, United States<br>October 25<sup>th</sup> 2021</h2>
-
-            <!-- <br class="mobile-break"> -->
-            <p><small>in conjunction with <a href="https://www.sigmobile.org/mobicom/2021/" target="_blank"><font color="FFFFFF">ACM MobiCom 2021</font></a></small></p>
-
-            <br class="mobile-break" style="line-height: 5px"/>
-
-            <p><small>Technically co-sponsored by the <a href="https://advancedwireless.org/" target="_blank"><font color="FFFFFF">PAWR</font></a> Project Office and by the <a href="https://www.advancedwireless.eu/" target="_blank"><font color="FFFFFF">EMPOWER</font></a> program</small></p>
-
-            <div class="testbed_logos_row">
-                <div class="testbed_logos_column">
-                    <a href="https://advancedwireless.org/" target="_blank"><img src="img/logos/pawr_white.png" alt="PAWR logo"></a>
-                    <a href="https://www.advancedwireless.eu/" target="_blank"><img src="img/logos/empower_logo.png" alt="EMPOWER logo"></a>
-                </div>
-            </div>
-        </div>
-    </header>
+    <!-- navigation bar and header placeholder -->
+    <div id="hdr-placeholder"></div>
 
     <section id="program" class="section facts" style="display: block;">
         <div class="container">
@@ -75,7 +21,14 @@
         </div>
     </section>
 
-    <script src="jquery/dist/jquery.min.js"></script>
+    <!-- import navigation bar and header -->
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+    $.get("header.html", function(data){
+        $("#hdr-placeholder").replaceWith(data);
+    });
+    </script>
+    
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="smooth-scroll/dist/js/smooth-scroll.min.js"></script>
 </body>
