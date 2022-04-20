@@ -1,0 +1,20 @@
+general_chairs:
+  - firstname: Özgü
+    lastname: Alay
+    institution: University of Oslo, Norway
+  - firstname: Hongwei
+    lastname: Zhang
+    institution: Iowa State University, United States
+
+poster_demo_chairs:
+  - firstname: Sanjay
+    lastname: Jha
+    institution: University of New South Wales, Australia
+  - firstname: Nadeem
+    lastname: Ahmed
+    institution: University of New South Wales, Australia
+
+web_chairs:
+  - firstname: Tobias
+    lastname: Meuser
+    institution: TU Darmstadt, Germany

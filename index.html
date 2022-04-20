@@ -1,10 +1,13 @@
+---
+# this is an empty front matter
+---
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>ACM WiNTECH 2021 | ACM MobiCom 2021</title>
+    <title>{{ site.data.conference.short_title }} {{ site.data.conference.year }} | ACM MobiCom {{ site.data.conference.year }}</title>
 
     <!-- css -->
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
@@ -12,13 +15,11 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body data-spy="scroll" data-target="#site-nav">
-    <!-- navigation bar and header placeholder -->
-    <div id="hdr-placeholder"></div>
+    {% include header.html %}
 
     <section id="about" class="section about" style="display: block;">
         <div class="container">
-            <h3 style="text-align:center;" class="section-title">The 15<sup>th</sup> ACM Workshop on Wireless Network<br>
-                Testbeds, Experimental evaluation &amp; CHaracterization
+            <h3 style="text-align:center;" class="section-title">{{ site.data.conference.title }}
                 <br><br>
                 <font size="4">Technically co-sponsored by the <a href="https://advancedwireless.org/" target="_blank">PAWR</a> Project Office and by the <a href="https://www.advancedwireless.eu/" target="_blank">EMPOWER</a> program</font>
             </h3>
@@ -53,11 +54,6 @@
 
     <!-- import navigation bar and header -->
     <script src="//code.jquery.com/jquery.min.js"></script>
-    <script>
-    $.get("header.html", function(data){
-        $("#hdr-placeholder").replaceWith(data);
-    });
-    </script>
 
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="smooth-scroll/dist/js/smooth-scroll.min.js"></script>

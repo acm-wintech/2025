@@ -1,10 +1,13 @@
+---
+# this is an empty front matter
+---
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>ACM WiNTECH 2021 | ACM MobiCom 2021</title>
+    <title>{{ site.data.conference.short_title }} {{ site.data.conference.year }} | ACM MobiCom {{ site.data.conference.year }}</title>
 
     <!-- css -->
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
@@ -12,8 +15,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body data-spy="scroll" data-target="#site-nav">
-    <!-- navigation bar and header placeholder -->
-    <div id="hdr-placeholder"></div>
+    {% include header.html %}
 
     <section id="cfp" class="section cfp" style="display: block;">
         <div class="container">
@@ -71,17 +73,12 @@
             Camera ready due: August 15<sup>th</sup> 2021<br/>
             Workshop: April 1<sup>st</sup> 2022</p>
 
-            <p>If you have any other questions regarding ACM WiNTECH 2021, please contact us at <a href="mailto:chair.wintech2021@gmail.com"><u>chair.wintech2021@gmail.com</u></a>.</b>
+            <p>If you have any other questions regarding ACM WiNTECH 2021, please contact us at <a href="mailto:chair.wintech2021@gmail.com"><u>chair.wintech2021@gmail.com</u></a>.
         </div>
     </section>
 
     <!-- import navigation bar and header -->
     <script src="//code.jquery.com/jquery.min.js"></script>
-    <script>
-    $.get("header.html", function(data){
-        $("#hdr-placeholder").replaceWith(data);
-    });
-    </script>
 
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="smooth-scroll/dist/js/smooth-scroll.min.js"></script>
