@@ -24,30 +24,31 @@
                 <font size="4">Technically co-sponsored by the <a href="https://advancedwireless.org/" target="_blank">PAWR</a> Project Office and by the <a href="https://www.advancedwireless.eu/" target="_blank">EMPOWER</a> program</font>
             </h3>
 
-            <p align="justify" style="color: red; font-weight: bold;">The conference organizers have confirmed that MobiCom 2021 and the related events will be conducted in person. Therefore, WiNTECH 2021 will also be in person, on April 1<sup>st</sup> 2022. We are exploring ways to make a hybrid option available for presenters or participants unable to attend in person.<br><br>
-
-            Note that this is still being referred to as WiNTECH 2021 and does not replace WiNTECH 2022, which is being planned to be held at its normal time in the fall of 2022.</p>
-
             <p align="justify">The increasing complexity of the wireless ecosystem witnessed in recent years has prompted an increasing need of experimental validation of innovative wireless solutions and applications and their coexistence. The WiNTECH workshop has been created to deal with all those methodological, technical and policy issues to be faced when defining, running, controlling and benchmarking experiments on wireless solutions. The workshop, now in its 15th edition, intends to bring together academic researchers and industry players working on different aspects of experimental wireless communications and networking. As such, it serves as a forum for sharing experiences and results with real testbeds, experimental evaluation, prototyping and empirical characterization of wireless technologies.</p>
 
             <p align="justify">The workshop will facilitate discussions on unresolved issues, including new laboratory methodologies, key real-life limitations of wireless technologies that have emerged over the past few years (e.g., mmWave, underwater, 5G, IoT, wearables, and SDN), as well as key challenges facing the wireless networking of the future. As WiNTECH concerns experimental communications and networking, it will feature a relatively large demo session as centerpiece, where real testbeds, deployments and prototypes can be demonstrated and discussed. A demo competition is planned.</p>
 
             <p align="justify">All the regular papers will be considered for the <b>Best Paper Award</b>.</p>
 
-            <p id="listing" align="justify">In addition to the regular papers, the program of WiNTECH 2021 will also include:</p>
+            <p id="listing" align="justify">In addition to the regular papers, the program of {{ site.data.conference.short_title }} {{ site.data.conference.year }} will also include:</p>
             <li>Keynote speeches from renowned researchers and practitioners</li>
             <li>Demos and posters</li>
             <br>
 
+						{% if site.data.keynotes.size > 0 %}
             <p><b>Keynote Speakers:</b><br/>
-            Dr. Jacobus (Kobus) Van der Merwe, University of Utah<br/>
-            Dr. Lin Zhong, Yale University<br/></p>
+						{% for keynote in site.data.keynotes %}
+							{{ keynote.academic_title }} {{ keynote.firstname }} {{ keynote.lastname }}, {{ keynote.affiliation }}
+						{% endfor %}
+						{% endif %}
 
             <p><b>IMPORTANT DATES:</b><br/>
-            Paper submission: June 14<sup>th</sup> 2021<br/>
-            Notification to authors: July 31<sup>st</sup> 2021<br/>
-            Camera ready due: August 15<sup>th</sup> 2021<br/>
-            Workshop: April 1<sup>st</sup> 2022</p>
+            Paper registration: {{ site.data.dates.registration }}<br/>
+            Paper submission: {{ site.data.dates.submission }}<br/>
+            Demos &amp; Posters submission: {{ site.data.dates.poster_demo_submission }}<br/>
+            Acceptance notification: {{ site.data.dates.notification }}<br/>
+            Camera ready: {{ site.data.dates.camera_ready }}<br/>
+            Workshop: {{ site.data.conference.dates }}</p>
 
         </div><!-- /.container -->
     </section>
