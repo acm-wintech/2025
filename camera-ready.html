@@ -1,10 +1,13 @@
+---
+# this is an empty front matter
+---
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>ACM WiNTECH 2021 | ACM MobiCom 2021</title>
+    <title>{{ site.data.conference.short_title }} {{ site.data.conference.year }} | ACM MobiCom {{ site.data.conference.year }}</title>
 
     <!-- css -->
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
@@ -12,8 +15,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body data-spy="scroll" data-target="#site-nav">
-    <!-- navigation bar and header placeholder -->
-    <div id="hdr-placeholder"></div>
+    {% include header.html %}
 
     <section id="camera-ready" class="section registration" style="display: block;">
         <div class="container">
@@ -24,7 +26,7 @@
             </div>
 
             <p id="listing" align="justify"><b>RIGHTS MANAGEMENT FORM</b></p>
-            <li>Before submitting the final version of your paper, please complete the rights management form at <a href="https://wintech21.hotcrp.com" target="_blank"><b>WiNTECH 2021 submission page</b></a>.</li>
+            <li>Before submitting the final version of your paper, please complete the rights management form at <a href="https://wintech22.hotcrp.com/" target="_blank"><b>{{ site.data.conference.short_title }} {{ site.data.conference.year }} submission page</b></a>.</li>
 
             <br>
 
@@ -40,7 +42,7 @@
             <br>
 
             <p id="listing" align="justify"><b>SUBMIT THE FINAL VERSION OF THE PAPER<br></b></p>
-            <li>Go to the <a href="https://wintech21.hotcrp.com" target="_blank"><b>WiNTECH 2021 submission page</b></a> and edit your paper.</li>
+            <li>Go to the <a href="https://wintech22.hotcrp.com/" target="_blank"><b>{{ site.data.conference.short_title }} {{ site.data.conference.year }} submission page</b></a> and edit your paper.</li>
             <li>Submit the source files and PDF of the final version of your paper.</li>
 
         </div>
@@ -48,12 +50,6 @@
 
     <!-- import navigation bar and header -->
     <script src="//code.jquery.com/jquery.min.js"></script>
-    <script>
-    $.get("header.html", function(data){
-        $("#hdr-placeholder").replaceWith(data);
-    });
-    </script>
-
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="smooth-scroll/dist/js/smooth-scroll.min.js"></script>
 </body>
