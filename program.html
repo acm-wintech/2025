@@ -1,10 +1,13 @@
+---
+# this is an empty front matter
+---
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>ACM WiNTECH 2021 | ACM MobiCom 2021</title>
+    <title>{{ site.data.conference.short_title }} {{ site.data.conference.year }} | ACM MobiCom {{ site.data.conference.year }}</title>
 
     <!-- css -->
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
@@ -13,7 +16,7 @@
 </head>
 <body data-spy="scroll" data-target="#site-nav">
     <!-- navigation bar and header placeholder -->
-    <div id="hdr-placeholder"></div>
+    {% include header.html %}
 
     <section id="program" class="section facts" style="display: block;">
         <div class="container">
@@ -24,34 +27,26 @@
                 </tr>
                 <tr>
                     <td> </td>
-                    <td>The workshop will take place on Friday, April 1<sup>st</sup> 2022. All times are in Central Time (CT).</td>
+                    <td>The workshop will take place on {{ site.data.conference.dates}}.</td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td> </td>
-                    <td><h3>MORNING</h3></td>
-                    <td>&nbsp;</td>
+                    <td>9:00 - 9:05am  &nbsp;  &nbsp;   </td>
+                    <td><h3>Opening Remarks</h3></td>
                 </tr>
                 <tr>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>9:00 - 9:15am  &nbsp  &nbsp   </td>
-                    <td><h3>Introductory Remarks and Salutation</h3></td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>9:15 - 10:00am  &nbsp  &nbsp   </td>
+                    <td>9:05 - 10:00am  &nbsp;  &nbsp;   </td>
                     <td>
                         <ulx>
-                            <h3><a data-scroll onclick="keynote.style.display='block';" href="keynote.html#keynoteI">Keynote I</a></h3><br>
+													<h3>Keynote</h3><br>
+                            <!--<h3><a data-scroll onclick="keynote.style.display='block';" href="keynote.html#keynoteI">Keynote I</a></h3><br>-->
                         </ulx>
                     </td>
                 </tr>
@@ -59,9 +54,9 @@
                     <td> </td>
                     <td>
                         <ulx>
+														<!--
                             <b><a data-scroll onclick="keynote.style.display='block';" href="keynote.html">The Hitchhiker’s Guide to Successful Deployment of a Mobile and Wireless Research Testbed</a></b><br>
-                            <!--<font size="3"><a href="https://www.youtube.com/watch?v=0a7x4oo_ASs&feature=youtu.be" target="_blank">Watch the keynote</a><br>-->
-                            <font size="2">Dr. Jacobus (Kobus) Van der Merwe <l>(University of Utah)</l></font><br>
+                            <font size="2">Dr. Jacobus (Kobus) Van der Merwe <l>(University of Utah)</l></font><br>-->
                         </ulx>
                     </td>
                 </tr>
@@ -70,19 +65,28 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td> </td>
+                    <td>10:00am -<br> 10:30am</td>
+                    <td><h3>Break</h3></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="vertical-align:text-top;">10:30 - 12:00pm  &nbsp;  &nbsp;   </td>
                     <td style="vertical-align:text-top;">
                         <ulx>
-                            <h3>Session I: PAWR Platforms<br>
-                            <font size="2", style="font-weight:normal">Session chair: Francesco Restuccia <l>(Northeastern University)</l></font></h3><br>
+                            <h3>Session I: Experimental Studies &amp; Localization<br>
+                            <font size="2", style="font-weight:normal">Session chair: TBD</font></h3><br>
                         </ulx>
                     </td>
                 </tr>
                 <tr>
-                    <td style="vertical-align:text-top;">10:00 - 10:20am  &nbsp  &nbsp   </td>
+                    <td style="vertical-align:text-top;"></td>
                     <td>
                         <ulx>
-                            <b>Programmable and Open-Access Millimeter-Wave Radios in the PAWR COSMOS Testbed</b><br>
+                            <b>Is WiFi 802.11mc Fine Time Measurement Ready for Prime-Time Localization?</b><br>
+														<!--
                             <font size="2">Tingjun Chen <l>(Duke University)</l>,<br>
                                 Prasanthi Maddala <l>(Rutgers University)</l>,<br>
                                 Panagiotis Skrimponis <l>(New York University)</l>,<br>
@@ -90,7 +94,7 @@
                                 Xiaoxiong Gu, Arun Paidimarri <l>(IBM Research)</l>,<br>
                                 Sundeep Rangan <l>(New York University)</l>,<br>
                                 Gil Zussman <l>(Columbia University)</l>,<br>
-                                Ivan Seskar <l>(Rutgers University)</l></font><br>
+                                Ivan Seskar <l>(Rutgers University)</l></font><br>-->
                         </ulx>
                     </td>
                 </tr>
@@ -98,17 +102,17 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td style="vertical-align:text-top;">10:20 - 10:40am  &nbsp  &nbsp   </td>
+                    <td style="vertical-align:text-top;"></td>
                     <td>
                         <ulx>
-                            <b>ARA: A Wireless Living Lab Vision for Smart and Connected Rural Communities</b><br>
-                            <font size="2">Hongwei Zhang, Yong Guan, Ahmed Kamal, Daji Qiao, Mai Zheng <l>(Iowa State University)</l>,<br>
+                            <b>Challenges in Platform-Independent UWB Ranging and Localization Systems</b><br>
+                            <!--<font size="2">Hongwei Zhang, Yong Guan, Ahmed Kamal, Daji Qiao, Mai Zheng <l>(Iowa State University)</l>,<br>
                                 Anish Arora <l>(Ohio State University)</l>,<br>
                                 Ozdal Boyraz <l>(University of California, Irvine)</l>,<br>
                                 Brian Cox, Thomas Daniels, Matthew Darr, Doug Jacobson, Ashfaq Khokhar, Sang Kim, James Koltes <l>(Iowa State University)</l>,<br>
                                 Jia Liu <l>(Ohio State University)</l>,<br>
                                 Michael Luby <l>(ICSI and BitRipple, Inc.)</l>,<br>
-                                Larysa Nadolny, Joshua Peschel, Patrick Schnable, Anuj Sharma, Arun Somani, Lie Tang <l>(Iowa State University)</l></font><br>
+                                Larysa Nadolny, Joshua Peschel, Patrick Schnable, Anuj Sharma, Arun Somani, Lie Tang <l>(Iowa State University)</l></font><br>-->
                         </ulx>
                     </td>
                 </tr>
@@ -116,11 +120,23 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td style="vertical-align:text-top;">10:40 - 11:00am  &nbsp  &nbsp   </td>
+                    <td style="vertical-align:text-top;"></td>
                     <td>
                         <ulx>
-                            <b>NexRAN: Closed-loop RAN Slicing in POWDER - A Top-to-bottom Open-source Open-RAN Use Case</b><br>
-                            <font size="2">David Johnson, Dustin Maas, Kobus Van der Merwe <l>(University of Utah)</l></font><br>
+                            <b>Experimental Evaluation of Virtual Reality Applications Running on Next-Gen Network Scenarios with Edge Cloud Assistance</b><br>
+                            <!--<font size="2">David Johnson, Dustin Maas, Kobus Van der Merwe <l>(University of Utah)</l></font><br>-->
+                        </ulx>
+                    </td>
+                </tr>
+								<tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="vertical-align:text-top;"></td>
+                    <td>
+                        <ulx>
+                            <b>SDR-LoRa: Dissecting and Implementing LoRa on Software-Defined Radios to Advance Experimental IoT Research</b><br>
+                            <!--<font size="2">David Johnson, Dustin Maas, Kobus Van der Merwe <l>(University of Utah)</l></font><br>-->
                         </ulx>
                     </td>
                 </tr>
@@ -129,7 +145,73 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>11:00 - 11:15am</td>
+                    <td>12:00pm - 1:30pm</td>
+                    <td><h3>Lunch</h3></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="vertical-align:text-top;">1:30pm - 3:00pm  &nbsp;  &nbsp;   </td>
+                    <td style="vertical-align:text-top;">
+                        <ulx>
+                            <h3>Session II: Experimental Platforms &amp; Studies<br>
+                            <font size="2", style="font-weight:normal">Session chair: TBD</font></h3><br>
+                        </ulx>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align:text-top;"></td>
+                    <td>
+                        <ulx>
+                            <b>Wireless Guard for Trustworthy Spectrum Management</b><br>
+                            <!--<font size="2">John Buczek, Lorenzo Bertizzolo, Stefano Basagni, Tommaso Melodia <l>(Northeastern University)</l></font><br>-->
+                        </ulx>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="vertical-align:text-top;"></td>
+                    <td>
+                        <ulx>
+                            <b>Reinforcement Learning of Millimeter Wave Beamforming Tracking over COSMOS Platform</b><br>
+                            <!--<font size="2">Udita Bhattacherjee, Ender Ozturk, Ozgur Ozdemir, Ismail Guvenc, Mihail L. Sichitiu, Huaiyu Dai <l>(North Carolina State University)</l></font><br>-->
+                        </ulx>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="vertical-align:text-top;"></td>
+                    <td>
+                        <ulx>
+                            <b>CaST: A Toolchain for Creating and Characterizing Realistic Wireless Network Emulation Scenarios</b><br>
+                            <!--<font size="2">Keith Powell, Andrew Yingst, Talha Faizur Rahman, Vuk Marojevic <l>(Mississippi State University)</l></font><br>-->
+                        </ulx>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="vertical-align:text-top;"></td>
+                    <td>
+                        <ulx>
+                            <b>Time-Slicing High Throughput WiFi Networks Using Centralized Queueing and Scheduling</b><br>
+                            <!--<font size="2">Keith Powell, Andrew Yingst, Talha Faizur Rahman, Vuk Marojevic <l>(Mississippi State University)</l></font><br>-->
+                        </ulx>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>3:00pm - 3:30pm</td>
                     <td><h3>Break</h3></td>
                 </tr>
                 <tr>
@@ -137,102 +219,22 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td> </td>
+                    <td style="vertical-align:text-top;">3:30pm - 4:40pm  &nbsp;  &nbsp;   </td>
                     <td style="vertical-align:text-top;">
                         <ulx>
-                            <h3>Session II: Unmanned Aerial Vehicles<br>
-                            <font size="2", style="font-weight:normal">Session chair: Ismail Guvenc <l>(North Carolina State University)</l></font></h3><br>
+                            <h3>Session III: Experimental Studies<br>
+                            <font size="2", style="font-weight:normal">Session chair: TBD</font></h3><br>
                         </ulx>
                     </td>
                 </tr>
                 <tr>
-                    <td style="vertical-align:text-top;">11:15 - 11:35am  &nbsp  &nbsp   </td>
+                    <td style="vertical-align:text-top;"></td>
                     <td>
                         <ulx>
-                            <b>What is A Wireless UAV? A Design Blueprint for 6G Flying Wireless Nodes</b><br>
-                            <font size="2">John Buczek, Lorenzo Bertizzolo, Stefano Basagni, Tommaso Melodia <l>(Northeastern University)</l></font><br>
-                        </ulx>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td style="vertical-align:text-top;">11:35 - 11:55am  &nbsp  &nbsp   </td>
-                    <td>
-                        <ulx>
-                            <b>Experimental Study of Outdoor UAV Localization and Tracking using Passive RF Sensing</b><br>
-                            <font size="2">Udita Bhattacherjee, Ender Ozturk, Ozgur Ozdemir, Ismail Guvenc, Mihail L. Sichitiu, Huaiyu Dai <l>(North Carolina State University)</l></font><br>
-                        </ulx>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td style="vertical-align:text-top;">11:55am - 12:15pm  &nbsp  &nbsp   </td>
-                    <td>
-                        <ulx>
-                            <b>Handover Experiments with UAVs: Software Radio Tools and Experimental Research Platform</b><br>
-                            <font size="2">Keith Powell, Andrew Yingst, Talha Faizur Rahman, Vuk Marojevic <l>(Mississippi State University)</l></font><br>
-                        </ulx>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>12:15 - 1:15pm</td>
-                    <td><h3>Lunch Break</h3></td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td><h3>AFTERNOON</h3></td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>1:15 - 2:00pm  &nbsp  &nbsp   </td>
-                    <td>
-                        <ulx>
-                            <h3><a data-scroll onclick="keynote.style.display='block';" href="keynote.html#keynoteII">Keynote II</a></h3><br>
-                        </ulx>
-                    </td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td>
-                        <ulx>
-                            <b><a data-scroll onclick="keynote.style.display='block';" href="keynote.html#keynoteII">From Massive MIMO to Quantum Computing: A Decade of Discovery by Prototyping</a></b><br>
-                            <font size="2">Dr. Lin Zhong <l>(Yale University)</l></font><br>
-                        </ulx>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td style="vertical-align:text-top;">
-                        <ulx>
-                            <h3>Session III: Wi-Fi, Cellular and mmWave Communications<br>
-                            <font size="2", style="font-weight:normal">Session chair: Lorenzo Bertizzolo <l>(Northeastern University)</l></font></h3><br>
-                        </ulx>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="vertical-align:text-top;">2:00 - 2:20pm  &nbsp  &nbsp   </td>
-                    <td>
-                        <ulx>
-                            <b>AX-CSI: Enabling CSI Extraction on Commercial 802.11ax Wi-Fi Platforms</b><br>
-                            <font size="2">Francesco Gringoli, Marco Cominelli <l>(University of Brescia)</l>,<br>
+                            <b>Coverage and Performance Analysis of 5G Non-Standalone Deployments</b><br>
+                            <!--<font size="2">Francesco Gringoli, Marco Cominelli <l>(University of Brescia)</l>,<br>
                                 Alejandro Blanco <l>(IMDEA Networks, Universidad Carlos III de Madrid)</l>,<br>
-                                Joerg Widmer <l>(IMDEA Networks)</l></font><br>
+                                Joerg Widmer <l>(IMDEA Networks)</l></font><br>-->
                         </ulx>
                     </td>
                 </tr>
@@ -240,12 +242,12 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td style="vertical-align:text-top;">2:20 - 2:40pm  &nbsp  &nbsp   </td>
+                    <td style="vertical-align:text-top;"></td>
                     <td>
                         <ulx>
-                            <b>Multipath TCP in Smartphones Equipped with Millimeter Wave Radios</b><br>
-                            <font size="2">Imran Khan, Moinak Ghoshal, Shivang Aggarwal, Dimitrios Koutsonikolas <l>(Northeastern University)</l>,<br>
-                                Joerg Widmer <l>(IMDEA Networks)</l></font><br>
+                            <b>Designing, Building, and Characterizing RF Switch-based Reconfigurable Intelligent Surfaces</b><br>
+                            <!--<font size="2">Imran Khan, Moinak Ghoshal, Shivang Aggarwal, Dimitrios Koutsonikolas <l>(Northeastern University)</l>,<br>
+                                Joerg Widmer <l>(IMDEA Networks)</l></font><br>-->
                         </ulx>
                     </td>
                 </tr>
@@ -253,15 +255,15 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td style="vertical-align:text-top;">2:40 - 3:00pm  &nbsp  &nbsp   </td>
+                    <td style="vertical-align:text-top;"></td>
                     <td>
                         <ulx>
-                            <b>A Comparison Study of Cellular Deployments in Chicago and Miami Using Apps on Smartphones</b><br>
-                            <font size="2">Muhammad Iqbal Rochman, Vanlin Sathya <l>(University of Chicago)</l>,<br>
+                            <b>Empirical Evaluation of Short-Range WiFi Vessel-to-Shore Overwater Communications</b><br>
+                            <!--<font size="2">Muhammad Iqbal Rochman, Vanlin Sathya <l>(University of Chicago)</l>,<br>
                                 Norlen Nunez, Damian Fernandez <l>(Florida International University)</l>,<br>
                                 Monisha Ghosh <l>(University of Chicago)</l>,<br>
                                 Ahmed S. Ibrahim <l>(Florida International University)</l>,<br>
-                                William Payne <l>(University of Chicago)</l></font><br>
+                                William Payne <l>(University of Chicago)</l></font><br>-->
                         </ulx>
                     </td>
                 </tr>
@@ -270,80 +272,8 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>3:00 - 3:15pm  &nbsp  &nbsp   </td>
-                    <td><h3>Break</h3></td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td style="vertical-align:text-top;">
-                        <ulx>
-                            <h3>Session IV: Spectrum and IoT<br>
-                            <font size="2", style="font-weight:normal">Session chair: Marco Cominelli <l>(University of Brescia)</l></font></h3><br>
-                        </ulx>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="vertical-align:text-top;">3:15 - 3:35pm  &nbsp  &nbsp   </td>
-                    <td>
-                        <ulx>
-                            <b>An Experimental Evaluation of MQTT Authentication and Authorization in IoT</b><br>
-                            <font size="2">Michael Michaelides (University of Edinburgh)</l>,<br>
-                                Cigdem Sengul (Brunel University)</l>,<br>
-                                Paul Patras (University of Edinburgh)</l></font><br>
-                        </ulx>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td style="vertical-align:text-top;">3:35 - 3:55pm  &nbsp  &nbsp   </td>
-                        <td>
-                            <ulx>
-                            <b>A Spectrum Consumption Model-based Framework for DSA Experimentation on the COSMOS Testbed</b><br>
-                            <font size="2">Dragoslav Stojadinovic, Prasad Netalkar <l>(Rutgers University)</l>,<br>
-                                Carlos E. Caicedo Bastidas <l>(Syracuse University)</l>,<br>
-                                Igor Kadota, Gil Zussman <l>(Columbia University)</l>,<br>
-                                Ivan Seskar, Dipankar Raychaudhuri <l>(Rutgers University)</l></font><br>
-                            </ulx>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td>
-                        </tr>
-                    <tr>
-                        <td style="vertical-align:text-top;">3:55 - 4:15pm  &nbsp  &nbsp   </td>
-                        <td>
-                            <ulx>
-                            <b>OneLNK: One Link to Rule Them All: Web-based Wireless Experimentation for Multi-vendor Remotely Accessible Indoor/Outdoor Testbeds</b><br>
-                            <font size="2">Mohammad M. R. Lunar, Jianxin Sun <l>(University of Nebraska-Lincoln)</l>,<br>
-                                John Wensowitch <l>(Southern Methodist University)</l>,<br>
-                                Michael Fay <l>(University of Nebraska-Lincoln)</l>,<br>
-                                Halit Bugra Tulay <l>(Ohio State University)</l>,<br>
-                                Sai Suman <l>(University of Nebraska-Lincoln)</l>,<br>
-                                Brian Qiu <l>(Rutgers University)</l>,<br>
-                                Deepak Nadig, Garhan Attebury, Hongfeng Yu <l>(University of Nebraska-Lincoln)</l>,<br>
-                                Joseph Camp <l>(Southern Methodist University)</l>,<br>
-                                Can Emre Koksal <l>(Ohio State University)</l>,<br>
-                                Dario Pompili <l>(Rutgers University)</l>,<br>
-                                Byrav Ramamurthy <l>(University of Nebraska-Lincoln)</l>,<br>
-                                Morteza Hashemi <l>(University of Kansas)</l>,<br>
-                                Eylem Ekici <l>(Ohio State University)</l>,<br>
-                                Mehmet C. Vuran <l>(University of Nebraska-Lincoln)</l></font><br>
-                        </ulx>
-                    </td>
-                </tr>
-                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>4:15 - 4:30pm  &nbsp  &nbsp   </td>
-                    <td><h3>Concluding Remarks</h3></td>
+                    <td>4:40 - 4:50pm  &nbsp;  &nbsp;   </td>
+                    <td><h3>Closing Remarks</h3></td>
                 </tr>
             </table>
         </div>
@@ -351,12 +281,6 @@
 
     <!-- import navigation bar and header -->
     <script src="//code.jquery.com/jquery.min.js"></script>
-    <script>
-    $.get("header.html", function(data){
-        $("#hdr-placeholder").replaceWith(data);
-    });
-    </script>
-    
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="smooth-scroll/dist/js/smooth-scroll.min.js"></script>
 </body>
