@@ -1,18 +1,19 @@
 general_chairs:
-  - firstname: Michele
-    lastname: Polese
+  - firstname: Salvatore
+    lastname: D'Oro
     institution: Northeastern University, Boston, MA, USA
-  - firstname: Florian
-    lastname: Kaltenberger
-    institution: Eurecom, Biot, France
+  - firstname: Aloizio
+    lastname: Pereira da Silva
+    institution: Commonwealth Cyber Initiative, Arlington, VA, USA
 
-poster_demo_chairs:
-  - firstname: Simone
-    lastname: Ferlin-Reiter
-    institution: RedHat, Sweden
-  - firstname: Claudio
-    lastname: Fiandrino
-    institution: IMDEA Networks, Spain
+# TODO: update chairs
+#poster_demo_chairs:
+#  - firstname: Simone
+#    lastname: Ferlin-Reiter
+#    institution: RedHat, Sweden
+#  - firstname: Claudio
+#    lastname: Fiandrino
+#    institution: IMDEA Networks, Spain
 
 # web_chairs:
 #   - firstname: Tobias
