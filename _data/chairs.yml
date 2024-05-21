@@ -6,14 +6,14 @@ general_chairs:
     lastname: Pereira da Silva
     institution: Commonwealth Cyber Initiative, Arlington, VA, USA
 
-# TODO: update chairs
-#poster_demo_chairs:
-#  - firstname: Simone
-#    lastname: Ferlin-Reiter
-#    institution: RedHat, Sweden
-#  - firstname: Claudio
-#    lastname: Fiandrino
-#    institution: IMDEA Networks, Spain
+
+poster_demo_chairs:
+  - firstname: Vincenzo
+    lastname: Sciancalepore
+    institution: NEC, Germany
+  - firstname: Vijay
+    lastname: Shah
+    institution: George Mason University, USA
 
 # web_chairs:
 #   - firstname: Tobias
