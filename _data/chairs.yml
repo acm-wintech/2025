@@ -15,7 +15,7 @@ poster_demo_chairs:
     lastname: Shah
     institution: George Mason University, USA
 
-# web_chairs:
-#   - firstname: Tobias
-#     lastname: Meuser
-#     institution: TU Darmstadt, Germany
+ web_chairs:
+   - firstname: Davide
+     lastname: Villa
+     institution: Northeastern University, USA
