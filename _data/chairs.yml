@@ -15,7 +15,7 @@ poster_demo_chairs:
     lastname: Shah
     institution: George Mason University, USA
 
- web_chairs:
+web_chairs:
    - firstname: Davide
      lastname: Villa
      institution: Northeastern University, USA
