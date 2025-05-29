@@ -1,2 +1,11 @@
-# wintech2024_website
-If run locally, needs server application for javascript calls (e.g., XAMPP/MAMP).
+# wintech2025_website
+To run locally
+
+```
+gem install github-pages
+gem install jekyll-livereload
+```
+
+```
+jekyll serve --livereload
+```
